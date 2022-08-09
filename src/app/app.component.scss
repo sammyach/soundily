@@ -1,13 +1,26 @@
-.container{
+.wrapper{
   // height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-  padding: 1rem;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
 
 }
 
 .box{
   width: 100%;
+}
+
+audio{
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+@media (min-width: 460px){
+  .box{
+    width: 300px;
+  }
 }

@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { SoundCardComponent } from './sound-card/sound-card.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SoundCardComponent
+    SoundCardComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule
