@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SoundCardComponent } from './sound-card/sound-card.component';
 import { HeaderComponent } from './header/header.component';
+import { AudioPlayerComponent } from './audio-player/audio-player.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SoundCardComponent,
-    HeaderComponent
+    HeaderComponent,
+    AudioPlayerComponent
   ],
   imports: [
     BrowserModule
