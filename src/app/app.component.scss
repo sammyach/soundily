@@ -1,19 +1,26 @@
 .wrapper{
   // height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
+
+
   margin-top: 3rem;
   padding-bottom: 3rem;
 
+}
+
+
+
+.sound-boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .box{
   width: 100%;
 }
 
-audio{
+.audio-player{
   width: 100%;
   bottom: 0;
   position: fixed;

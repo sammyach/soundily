@@ -15,8 +15,5 @@ export class SoundCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  play(obj: any){
-    this._service.loadSelectedSound(obj);
-  }
 
 }

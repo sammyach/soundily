@@ -2,12 +2,16 @@
   <app-header></app-header>
 
   <div class="wrapper">
-    <div class="box" *ngFor="let item of data">
-      <app-sound-card [SoundObj]="item"></app-sound-card>
+
+    <div class="sound-boxes">
+      <div class="box" *ngFor="let item of data">
+        <app-sound-card [SoundObj]="item"></app-sound-card>
+      </div>
     </div>
+
   </div>
-  <audio controls #stream >
-    Your browser does not support the audio element.
-  </audio>
+  <div class="audio-player">
+    <app-audio-player></app-audio-player>
+  </div>
 </div>
 
