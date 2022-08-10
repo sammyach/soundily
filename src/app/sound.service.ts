@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, pairwise, startWith } from 'rxjs';
 
 export interface SoundModel{
   name?: string;
@@ -12,14 +12,18 @@ export interface SoundModel{
 })
 export class SoundService {
 
-  private selectedSound: BehaviorSubject<SoundModel> = new BehaviorSubject<SoundModel>({});
+  private selectedSound: BehaviorSubject<any> = new BehaviorSubject<any>(null);
   get $selectedSound(){
-    return this.selectedSound.asObservable();
+    return this.selectedSound.asObservable().pipe(//so we can get both previous and current values
+      startWith(null),
+      pairwise());
   }
 
   constructor() { }
 
   loadSelectedSound(data: any){
+    console.log('loaded ',data);
+
     this.selectedSound.next(data);
   }
   getData(){
@@ -40,11 +44,8 @@ export class SoundService {
         playing: false
       },
       {
-        name: 'Car honk',
-        playing: false
-      },
-      {
-        name: 'Car honk',
+        name: 'Cock crowing',
+        url: 'assets/audio/cock-crowing.ogg',
         playing: false
       },
       {
