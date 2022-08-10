@@ -1,3 +1,17 @@
-<audio controls #stream loop>
+<div class="audio-player-container">
+  <div class="sound-title">
+    <div>
+      <i (click)="_service.loadSelectedSound(currentSoundObj)" *ngIf="!currentSoundObj?.playing"  class="fa fa-play"></i>
+      <i (click)="_service.loadSelectedSound(currentSoundObj)" *ngIf="currentSoundObj?.playing"  class="fa fa-pause"></i>
+      {{currentSoundObj?.name}}  - {{duration}}
+    </div>
+
+
+    <i *ngIf="!muted" (click)="toggleMute()" class="fa fa-volume-up volume-btn" aria-hidden="true"></i>
+    <i *ngIf="muted" (click)="toggleMute()" class="fa fa-volume-off volume-btn" aria-hidden="true"></i>
+  </div>
+  <input class="volume-range" (input)="updateVolume($event)" type="range" min="0" max="1" step="0.1" value="{{volume}}">
+</div>
+<audio #stream loop>
   Your browser does not support the audio element.
 </audio>

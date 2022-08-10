@@ -47,50 +47,6 @@ export class SoundService {
         name: 'Cock crowing',
         url: 'assets/audio/cock-crowing.ogg',
         playing: false
-      },
-      {
-        name: 'Car honk',
-        playing: false
-      },
-      {
-        name: 'Car honk',
-        playing: false
-      },
-      {
-        name: 'Car honk',
-        playing: false
-      },
-      {
-        name: 'Car honk',
-        playing: false
-      },
-      {
-        name: 'Car honk',
-        playing: false
-      },
-      {
-        name: 'Car honk',
-        playing: false
-      },
-      {
-        name: 'Car honk',
-        playing: false
-      },
-      {
-        name: 'Car honk',
-        playing: false
-      },
-      {
-        name: 'Car honk',
-        playing: false
-      },
-      {
-        name: 'Car honk',
-        playing: false
-      },
-      {
-        name: 'Car honk',
-        playing: false
       }
     ];
 

@@ -1,3 +1,29 @@
-audio{
+// audio{
+//   width: 100%;
+// }
+
+.audio-player-container{
+  width: 100%;
+  background: #fff;
+  padding: 1rem 1.2rem;
+}
+
+.sound-title{
+  font-size: .7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sound-title .fa:hover{
+  cursor: pointer;
+}
+
+// .volume-btn:hover{
+//   .volume-range{
+//     visibility: visible;
+//   }
+// }
+
+.volume-range{
   width: 100%;
 }
